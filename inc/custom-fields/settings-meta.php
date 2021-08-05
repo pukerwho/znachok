@@ -5,7 +5,7 @@ use Carbon_Fields\Field;
 
 add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
-  Container::make( 'theme_options', __('Welbrix') )
+  Container::make( 'theme_options', __('Shop Settings') )
   	->add_tab( __('Главная страница'), array(
       Field::make( 'complex', 'crb_main_sliders' . crb_get_i18n_suffix(), 'Главный слайдер' )
           ->add_fields( array(
