@@ -125,7 +125,8 @@ Template Name: ГЛАВНАЯ
 		<h2 class="text-4xl lg:text-6xl font-black leading-none text-center mb-16"><?php _e('О нас', 'znachok'); ?></h2>
 		<div class="container mx-auto px-4 md:px-0">
 			<div class="w-full content lg:w-1/2 mx-auto">
-				<?php echo crb_get_i18n_theme_option('crb_main_text'); ?>
+				<?php $main_text = crb_get_i18n_theme_option( 'crb_main_text' ); ?>
+				<?php echo apply_filters( 'the_content', $main_text  ); ?>	
 			</div>
 		</div>
 	</div>
