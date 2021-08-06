@@ -1082,8 +1082,8 @@ input[type="number"] {
   color: #ffffff;
   font-weight: 700;
   background: #EA5020;
-  -webkit-box-shadow: -10px 10px 20px #ff3787;
-  box-shadow: -10px 10px 20px #ff3787;
+  -webkit-box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
+  box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
   border-radius: 20px;
   text-align: center;
   padding: 12px 20px; }
