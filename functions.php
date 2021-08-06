@@ -16,9 +16,19 @@ function customThemeSupport() {
 }
 add_action( 'after_setup_theme', 'customThemeSupport' );
 
-require_once get_template_directory() . '/inc/carbon-fields/carbon-fields-plugin.php';
-require_once get_template_directory() . '/inc/custom-fields/settings-meta.php';
-require_once get_template_directory() . '/inc/custom-fields/product-meta.php';
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+use Carbon_Fields\Block;
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+    require_once __DIR__ . '/vendor/autoload.php';
+    \Carbon_Fields\Carbon_Fields::boot();
+    require_once get_template_directory() . '/inc/carbon-fields/carbon-fields-plugin.php';
+    require_once get_template_directory() . '/inc/custom-fields/settings-meta.php';
+    require_once get_template_directory() . '/inc/custom-fields/product-meta.php';
+}
+
 require_once get_template_directory() . '/inc/woocommerce-functions/znachok-functions.php';
 
 function znachok_scripts() {

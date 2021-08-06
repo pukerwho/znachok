@@ -136,8 +136,17 @@ Template Name: ГЛАВНАЯ
 	<div class="clients mb-20">
 		<div class="container mx-auto px-4 lg:px-0">
 			<h2 class="text-4xl lg:text-6xl font-black leading-none text-center mb-16"><?php _e('Клиенты', 'znachok'); ?></h2>
-			<div>
-				Клиенты
+			<div class="flex flex-wrap -mx-2">
+				<?php 
+					$clients = carbon_get_theme_option('crb_clients');
+					foreach ( $clients as $client ): ?>
+					<div class="clients_logo w-1/2 lg:w-2/12 px-2 mb-4">
+						<div class="rounded-2xl border border-gray-300 ">
+							<?php $photo_src = wp_get_attachment_image_src($client, 'large'); ?>
+							<img src="<?php echo $photo_src[0]; ?>" loading="lazy" class="h-20 object-contain px-6 py-3 mx-auto">	
+						</div>
+					</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
