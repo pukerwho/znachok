@@ -1075,3 +1075,15 @@ input[type="number"] {
     background: #ffffff;
     border-radius: 8px;
     padding: 12px 20px; }
+
+/* FILTER CSS */
+.prdctfltr_woocommerce_filter_submit {
+  display: block;
+  color: #ffffff;
+  font-weight: 700;
+  background: #EA5020;
+  -webkit-box-shadow: -10px 10px 20px #ff3787;
+  box-shadow: -10px 10px 20px #ff3787;
+  border-radius: 20px;
+  text-align: center;
+  padding: 12px 20px; }
