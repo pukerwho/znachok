@@ -61,6 +61,9 @@
       <!-- END Сайдбар на десктопе -->
 
       <div class="w-full lg:w-9/12 py-10 lg:pl-8">
+
+        <div class="collected_filter_row"></div> 
+        
         <?php do_action( 'woocommerce_before_single_product' ); ?>  
         <?php
           if ( woocommerce_product_loop() ) {

@@ -794,8 +794,7 @@ input[type="number"] {
   display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: .5rem; }
+  flex-wrap: wrap; }
   .products .product_card_title {
     font-size: 18px; }
   .products .product_card_price {
