@@ -8,17 +8,18 @@ Template Name: ГЛАВНАЯ
 
 <div class="main-page">
 	<div class="top-corner-img">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top-corner-img.svg" alt="<?php _e('Значки', 'znachok'); ?>">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top-corner-img.svg" alt="<?php _e('Значки', 'znachok'); ?>" class="hidden lg:block">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top-corner-img-mobile.svg" alt="<?php _e('Значки', 'znachok'); ?>" class="block lg:hidden">
 	</div>
 	<div class="left-side-img">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/left-side-img.svg" alt="<?php _e('Значки', 'znachok'); ?>">
 	</div>
 
 	<!-- WELCOME BLOCK -->
-	<div class="welcome pt-48 mb-48">
+	<div class="welcome pt-36 lg:pt-48 mb-20 lg:mb-48">
 		<div class="container mx-auto px-4 md:px-0">
 			<div class="w-full lg:w-6/12 welcome_content ">
-				<h1 class="text-4xl lg:text-6xl font-black lg:leading-tight mb-6"><?php _e('Авторские значки и фурнитура', 'znachok'); ?></h1>
+				<h1 class="text-3xl lg:text-6xl font-black lg:leading-tight mb-6"><?php _e('Авторские значки и фурнитура', 'znachok'); ?></h1>
 				<div class="text-lg mb-10">
 					<?php echo crb_get_i18n_theme_option('crb_main_description'); ?>
 				</div>
@@ -33,18 +34,18 @@ Template Name: ГЛАВНАЯ
 	<!-- END WELCOME BLOCK -->
 
 	<!-- ПОПУЛЯРНЫЕ ТОВАРЫ НА ГЛАВНОЙ -->
-	<div class="popular mb-20 lg:mb-64">
+	<div class="popular mb-0 lg:mb-20 lg:mb-64">
 		<div class="container mx-auto px-4 md:px-0">
 			<div class="w-full flex items-center justify-between mb-16">
-				<h2 class="text-4xl lg:text-6xl font-black leading-none"><?php _e('Популярные товары', 'znachok'); ?></h2>
+				<h2 class="text-2xl lg:text-6xl font-black leading-none mr-4"><?php _e('Популярные товары', 'znachok'); ?></h2>
 
 				<!-- Swiper Навигация -->
 				<div class="popular_arrows relative flex">
-					<div class="popular_arrows_prev flex justify-center cursor-pointer mr-5">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow_next.svg" width="13" height="21">
+					<div class="popular_arrows_prev flex justify-center cursor-pointer mr-3 lg:mr-5">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow_next.svg" >
 					</div>
 					<div class="popular_arrows_next flex justify-center cursor-pointer">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow_next.svg" width="13" height="21">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow_next.svg" >
 					</div>
 				</div>
 				<!-- END Swiper Навигация -->
@@ -104,7 +105,7 @@ Template Name: ГЛАВНАЯ
 	<!-- END ПОПУЛЯРНЫЕ ТОВАРЫ НА ГЛАВНОЙ -->
 
 	<!-- БЛОК О НАС НА ГЛАВНОЙ -->
-	<div class="about bg_yellow relative py-48 mb-20">
+	<div class="about bg_yellow relative py-48 lg:mb-20">
 		<!-- IMAGES (ICONS) -->
 		<div class="about-top-left">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-top-left.png">

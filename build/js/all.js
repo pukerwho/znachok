@@ -40,25 +40,31 @@ $('.header_toggle').on('click', function(){
   $('.menu_mobile').toggleClass('show');
 });
 
+var swiperSliderPerView;
+var swiperSpaceBetween;
+
+if (document.body.clientWidth < 768) {
+  var swiperSliderPerView = 1;
+  var swiperSpaceBetween = 20;
+} else {
+  var swiperSliderPerView = 3;
+  var swiperSpaceBetween = 16;
+}
+
 var swiperPopularProduct = new Swiper('.swiper-popular-product-container', {
-  slidesPerView: 3,
-  spaceBetween: 16,
+  slidesPerView: swiperSliderPerView,
+  spaceBetween: swiperSpaceBetween,
   loop: true,
   autoplay: {
     delay: 5000,
-  },
-  breakpoints: {
-    // when window width is >= 320px
-    769: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    }
   },
   navigation: {
     nextEl: '.popular_arrows_next',
     prevEl: '.popular_arrows_prev',
   },
 });
+
+console.log(swiperSliderPerView);
 // Меняем значение КОЛ-ВО при клике на кнопки + и -
 $( 'body' ).on( 'click', 'button.quantity-up, button.quantity-down', function() { 
   var qty = $(this).parent().find( 'input' ),

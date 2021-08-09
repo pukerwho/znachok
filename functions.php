@@ -45,6 +45,7 @@ add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 register_nav_menus( array(
     'head_menu' => 'Меню в шапке',
+    'lang_header' => 'Lang Header'
 ) );
 
 //CARBON FIELDS + WPML

@@ -14,7 +14,7 @@
   <header id="header" class="header" role="banner">
     <div class="container relative mx-auto px-4 md:px-0">
       <div class="header_container flex justify-between items-center bg-white rounded-full shadow-md py-2 px-0 lg:p-2">
-        <div class="logo pl-4">
+        <div class="logo mr-4 lg:mr-0 pl-4">
           <a href="<?php echo home_url(); ?>">
             <?php if (is_cart() || is_shop()): ?>
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-green.svg" alt="Лого">
@@ -31,10 +31,12 @@
               'menu_class' => 'flex',
             ]); ?>
           </div>
-          <?php if (get_locale() == 'ru_RU') { $activeRu = 'active'; } ?>
-          <div class="header_lang flex <?php echo $activeRu; ?>">
-            <li><a href="#">укр</a></li>
-            <li><a href="#">рус</a></li>
+          <div class="header_lang flex">
+            <?php wp_nav_menu([
+              'theme_location' => 'lang_header',
+              'container' => 'div',
+              'menu_class' => 'flex',
+            ]); ?> 
           </div>
           <div class="header_cart relative mr-5 lg:mr-0">
             <a href="<?php echo wc_get_cart_url(); ?>" class="w-full h-full absolute left-0 top-0 z-10"></a>
