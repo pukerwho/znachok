@@ -1036,6 +1036,9 @@ input[type="number"] {
   .product_gallery_item img {
     width: 100%;
     border-radius: 1.5rem 0px 0px 1.5rem; }
+    @media (max-width: 767px) {
+      .product_gallery_item img {
+        border-radius: 10px 10px 0px 0px; } }
 
 .product_qty {
   width: 105px;

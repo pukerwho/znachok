@@ -8,7 +8,7 @@
 
 <?php while ( have_posts() ) : ?>
   <?php the_post(); ?>
-  <div class="pt-48 mb-20">
+  <div class="pt-32 lg:pt-48 mb-20">
     <div class="container mx-auto px-4 md:px-0">
       
       <div class="mb-8">
@@ -39,7 +39,7 @@
           </ul>
         </div>
         <!-- Title -->
-        <h1 class="text-6xl font-black mb-2"><?php the_title(); ?></h1>
+        <h1 class="text-3xl lg:text-6xl font-black mb-2"><?php the_title(); ?></h1>
         <!-- END Title -->
 
         <!-- Артикул -->
