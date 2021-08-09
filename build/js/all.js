@@ -98,3 +98,15 @@ $( 'body' ).on( 'click', 'button.quantity-up, button.quantity-down', function() 
 $( 'body' ).on( 'change', '.qty', function() {
   $( '[name="update_cart"]' ).trigger( 'click' );
 });
+
+//Открытие фильтра на мобильном
+$('.filter_mobile_toggle').on('click', function(){
+  $('.filter_mobile_cover').addClass('show');
+  $('.modal_bg').addClass('show filter blur-lg');
+});
+
+//Закрытие фильтра на мобильном
+$('.filter_mobile_cover_close').on('click', function(){
+  $('.filter_mobile_cover').removeClass('show');
+  $('.modal_bg').removeClass('show filter blur-lg');
+});

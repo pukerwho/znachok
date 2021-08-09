@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="pt-64 mb-20">
+<div class="pt-32 lg:pt-64 mb-20">
   <div class="container mx-auto px-4 md:px-0">
     
     <div class="mb-8">
@@ -31,20 +31,19 @@
 
       <!-- Кнопка вызова фильтра на мобильных -->
       <div class="filter_mobile_toggle flex lg:hidden items-center cursor-pointer">
-        <div class="mb-4"><?php _e('Фильтр', 'welbrix'); ?></div>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/filter-icon.svg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/filter-icon.svg">
       </div>
       <!-- END Кнопка вызова фильтра на мобильных -->
 
       <!-- Мобильный фильтр OPEN -->
       <div class="filter_mobile_cover flex lg:hidden">
         <div class="container mx-auto">
-          <div class="px-2 py-10">
+          <div class="bg-white rounded-lg px-2 py-10">
             <h2 class="text-center text-2xl mb-6"><?php _e('Фильтр', 'welbrix'); ?></h2>
-            <div class="filter">
-              <?php echo do_shortcode('[wpf-filters id=1]') ?>
+            <div class="mb-4">
+              <?php echo do_shortcode('[products_finder]') ?>
             </div>
-            <div class="filter_mobile_cover_close cursor-pointer">
+            <div class="filter_mobile_cover_close text-center px-4 py-2 cursor-pointer">
               <?php _e('Закрыть', 'welbrix'); ?>
             </div>    
           </div>
