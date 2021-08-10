@@ -1216,6 +1216,7 @@ input[type="number"] {
   display: block !important;
   width: 100%; }
   .prdctfltr_wc span.prdctfltr_reset label {
+    width: 100%;
     color: #ffffff;
     font-weight: 700;
     background: var(--color_gray);
