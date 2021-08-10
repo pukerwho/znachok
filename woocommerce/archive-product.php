@@ -3,7 +3,7 @@
 <div class="pt-32 lg:pt-64 mb-20">
   <div class="container mx-auto px-4 md:px-0">
     
-    <div class="mb-8">
+    <div class="mb-0 lg:mb-8">
       <div class="breadcrumbs text-sm mb-4" itemprop="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
         <ul class="flex items-center flex-wrap">
           <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem' class="breadcrumbs_item mr-8 pl-8">
@@ -24,7 +24,7 @@
           </li>
         </ul>
       </div>
-      <h1 class="text-6xl font-black"><?php woocommerce_page_title(); ?></h1>
+      <h1 class="text-3xl lg:text-6xl font-black"><?php woocommerce_page_title(); ?></h1>
     </div>
 
     <div class="flex flex-col md:flex-row">

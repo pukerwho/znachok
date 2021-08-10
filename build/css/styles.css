@@ -887,6 +887,9 @@ input[type="number"] {
     .popular .swiper-popular-product-container {
       padding-right: 90px; } }
 
+.archive .products {
+  margin: -0.5rem; }
+
 .products {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1197,7 +1200,7 @@ input[type="number"] {
     padding: 12px 20px; }
 
 /* FILTER CSS */
-.prdctfltr_woocommerce_filter_submit {
+.prdctfltr_wc_regular.pf_default .prdctfltr_woocommerce_filter_submit {
   display: block;
   color: #ffffff;
   font-weight: 700;
@@ -1206,4 +1209,18 @@ input[type="number"] {
   box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
   border-radius: 20px;
   text-align: center;
+  padding: 12px 20px;
+  margin-bottom: 1rem !important; }
+
+.prdctfltr_wc span.prdctfltr_reset {
+  display: block !important;
+  color: #ffffff;
+  font-weight: 700;
+  background: var(--color_gray);
+  -webkit-box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
+  box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
+  border-radius: 20px;
+  text-align: center;
   padding: 12px 20px; }
+  .prdctfltr_wc span.prdctfltr_reset span label span:before {
+    content: none; }

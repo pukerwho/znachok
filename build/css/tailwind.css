@@ -1289,6 +1289,10 @@ video {
     margin-bottom: 0px;
   }
 
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .lg\:mb-16 {
     margin-bottom: 4rem;
   }

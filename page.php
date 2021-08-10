@@ -26,7 +26,7 @@
           </ul>
         </div>
         <!-- Title -->
-        <h1 class="text-6xl font-black mb-2"><?php the_title(); ?></h1>
+        <h1 class="text-3xl text-6xl font-black mb-2"><?php the_title(); ?></h1>
       </div>
       <div class="w-full mb-20">
         <?php the_content(); ?>
