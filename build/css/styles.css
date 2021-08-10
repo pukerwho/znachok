@@ -1214,13 +1214,15 @@ input[type="number"] {
 
 .prdctfltr_wc span.prdctfltr_reset {
   display: block !important;
-  color: #ffffff;
-  font-weight: 700;
-  background: var(--color_gray);
-  -webkit-box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
-  box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
-  border-radius: 20px;
-  text-align: center;
-  padding: 12px 20px; }
-  .prdctfltr_wc span.prdctfltr_reset span label span:before {
-    content: none; }
+  width: 100%; }
+  .prdctfltr_wc span.prdctfltr_reset label {
+    color: #ffffff;
+    font-weight: 700;
+    background: var(--color_gray);
+    -webkit-box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
+    box-shadow: -10px 10px 20px rgba(255, 55, 135, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px 20px; }
+    .prdctfltr_wc span.prdctfltr_reset label span:before {
+      content: none; }
